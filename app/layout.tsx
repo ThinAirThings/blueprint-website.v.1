@@ -1,9 +1,10 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
-import { Container, Flex, Theme } from '@radix-ui/themes';
+import { Container, Theme } from '@radix-ui/themes';
 import '@radix-ui/themes/styles.css';
 import './globals.css'
 import { Header } from './components/Header';
+import { Footer } from './components/Footer';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -33,7 +34,7 @@ export default function RootLayout({
                     >
                         {children}
                     </Container>
-                    <div className="h-[300px]"></div>
+                    <Footer/>
                 </Theme>
             </body>
         </html>

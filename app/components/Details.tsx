@@ -19,12 +19,27 @@ import { CounterClockwiseClockIcon, PersonIcon, TargetIcon } from "@radix-ui/rea
 
 export const Details: FC = () => {
     return (
-        <Flex direction={'column'} gap='6' align='center'>
-            <Box><Badge variant='surface' size='2'>Professional Apparel for Businesses</Badge></Box>
-            <Grid className="w-full" justify={'between'} align='center' gap='7' columns={'2'}>
-                <Flex direction={'column'}>
-                    <Heading as='h3' color='blue' highContrast>The Professional Apparel Company</Heading>
-                    <Heading as='h4' size='7'>Responsiveness. Quality. Reliability.</Heading>
+        <Flex direction={'column'} gap='6' align='center' mt={{
+            initial: '1',
+            md: '7'
+        }}>
+            <Box><Badge variant='surface' size='2' highContrast>Professional Apparel for Businesses</Badge></Box>
+            <Grid className="w-full" justify={'between'} align='center' gap='7' columns={{
+                initial: '1',
+                md: '2'
+            }}>
+                <Flex direction={'column'} px={{
+                    initial: '3',
+                    md: '0'
+                }}>
+                    <Heading as='h3' color='blue' highContrast size={{
+                        initial: '5',
+                        md: '7'
+                    }}>The Professional Apparel Company</Heading>
+                    <Heading as='h4' size={{
+                        initial: '4',
+                        md: '6'
+                    }}>Responsiveness. Quality. Reliability.</Heading>
                     <Flex direction={'column'} gap='5' pt='5'>
                         <Detail
                             icon={<PersonIcon width='18px' height='18px' color='var(--blue-12)'/>}
@@ -43,7 +58,10 @@ export const Details: FC = () => {
                         />
                     </Flex>
                 </Flex>
-                <Grid columns='4' gapX='3' gapY='4' align={'center'} justify={'center'} flow='row-dense' height='min-content'>
+                <Grid columns='4' gapX='3' gapY='4' align={'center'} justify={'center'} flow='row-dense' height='min-content' px={{
+                    initial: '4',
+                    md: '0'
+                }}>
                     <Box><Image src={northfaceLogo} alt="northface-logo"/></Box>
                     <Box><Image src={neweraLogo} alt="newera-logo"/></Box>
                     <Box><Image src={independentLogo} alt="independent-logo"/></Box>
@@ -73,7 +91,10 @@ const Detail: FC<{
     description
 }) => {
     return (
-        <Flex gap='3' pl='6'>
+        <Flex gap='3' pl={{
+            initial: '4',
+            md: '6'
+        }}>
             <Box pt='1' width='min-content' height='min-content'>{icon}</Box>
             <Flex direction={'column'} gap='1'>
                 <Text size='3' weight='bold'>{title}</Text>

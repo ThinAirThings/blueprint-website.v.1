@@ -1,5 +1,6 @@
 import { Button, Container, Flex } from "@radix-ui/themes";
 import Image from "next/image";
+import Link from "next/link";
 import { FC } from "react";
 
 
@@ -16,8 +17,13 @@ export const Header: FC = () => {
                 }}
             >
                 <Flex justify={'between'} align={'end'} py='3' px='3'>
-                    <Image src='/assets/blueprint-logo-fullText.svg' alt='logo' width={90} height={40}></Image> 
-                    <Button highContrast>Contact Us</Button>
+                    <Link href='/'>
+                        <Image src='/assets/blueprint-logo-fullText.svg' alt='logo' width={90} height={40}></Image> 
+                    </Link>
+                    
+                    <Link href="/contact">
+                        <Button highContrast>Contact Us</Button>
+                    </Link>
                 </Flex>
             </Container>
         </Flex>
