@@ -12,12 +12,10 @@ interface LoadingButtonProps
 }
 export const FormButton = forwardRef<ElementRef<'button'>, LoadingButtonProps>((props, ref) => {
     const {pending} = useFormStatus()
-    const {...buttonProps}  = props
     return (
         <Button
             highContrast
             ref={ref}
-            {...buttonProps}
         >
             {pending
                 ? <RotatingLines
