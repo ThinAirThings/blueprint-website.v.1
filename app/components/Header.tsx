@@ -21,7 +21,7 @@ export const Header: FC = () => {
                         <Image src='/assets/blueprint-logo-fullText.svg' alt='logo' width={90} height={40}></Image> 
                     </Link>
                     
-                    <Link href="/contact">
+                    <Link href="/contact-us">
                         <Button highContrast>Contact Us</Button>
                     </Link>
                 </Flex>
