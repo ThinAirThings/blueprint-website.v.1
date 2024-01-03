@@ -1,4 +1,5 @@
-import { Button, Container, Flex } from "@radix-ui/themes";
+import { PaperPlaneIcon } from "@radix-ui/react-icons";
+import { Box, Button, Container, Flex, Text } from "@radix-ui/themes";
 import Image from "next/image";
 import Link from "next/link";
 import { FC } from "react";
@@ -18,12 +19,19 @@ export const Header: FC = () => {
             >
                 <Flex justify={'between'} align={'end'} py='3' px='3'>
                     <Link href='/'>
-                        <Image src='/assets/blueprint-logo-fullText.svg' alt='logo' width={90} height={40}></Image> 
+                        <Image src='/assets/logos.blueprint/BP-logo.svg' alt='logo' width={35} height={40}></Image> 
                     </Link>
-                    
-                    <Link href="/contact-us">
-                        <Button highContrast>Contact Us</Button>
-                    </Link>
+                    <Flex gap='7' align='end'>
+                        <Link href="/about">
+                            <Box display={{
+                                initial: 'none',
+                                md: 'block'
+                            }}><Text weight='medium'>About Us</Text></Box>
+                        </Link>
+                        <Link href="/contact-us">
+                            <Button highContrast><PaperPlaneIcon/>Contact Us</Button>
+                        </Link>
+                    </Flex> 
                 </Flex>
             </Container>
         </Flex>

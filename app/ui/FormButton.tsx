@@ -16,9 +16,7 @@ export const FormButton = forwardRef<ElementRef<'button'>, LoadingButtonProps>((
     return (
         <Button
             highContrast
-            className="bg-blue10"
             ref={ref}
-            color='sky'
             {...buttonProps}
         >
             {pending

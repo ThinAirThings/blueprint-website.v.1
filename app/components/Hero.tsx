@@ -15,34 +15,36 @@ import pipedreamLogo from '../../public/assets/logos.customers/pipedream-logo.pn
 import wrapcityLogo from '../../public/assets/logos.customers/wrapcity-logo.png'
 import backyardLogo from '../../public/assets/logos.customers/backyard-logo.png'
 import mentisLogo from '../../public/assets/logos.customers/mentis-logo.png'
+import Link from "next/link";
 
 export const Hero: FC = () => {
     return (
         <Flex direction={'column'} align='center' pt={{
             initial: '3',
-            md: '9'
-        }} gap='4'>
-            <Heading as='h1' align='center' size={{
+            md: '7'
+        }} px='5' gap='4'>
+            <Heading as='h3' align='center' size={{
                 initial: '8',
                 md: '9'
             }} >Your Partner in <br/>Business Apparel</Heading>
-            <Box className="
+
+            <Flex className="
                 w-10/12
                 md:w-8/12
             ">
-                <Heading as='h2' align='center' size={{
+                <Text weight="bold" size={{
                     initial: '4',
                     md: '5'
-                }} color='gray'>From concept to closet, our team crafts custom attire that elevates your workforce and brand, catering to everyone from corporate to creative industries like breweries, ensuring a lasting impact and style.</Heading>
-            </Box>
-            <Flex gap='5'>
-                <Button highContrast><PaperPlaneIcon/>Contact Us</Button>
-                <Button highContrast variant='outline'><CubeIcon/>Services</Button>
+                }} color='gray' align='center'>Logo Embroidery & Personalized Screen Printing Services for Businesses Small and Large</Text>
             </Flex>
-            <Text align={'center'} size={{
+            <Flex gap='5'>
+                <Link href="/contact-us"><Button highContrast><PaperPlaneIcon/>Contact Us</Button></Link>
+                <Link href="#services"><Button highContrast variant='outline'><CubeIcon/>Services</Button></Link>
+            </Flex>
+            <Heading as="h3" align={'center'} size={{
                 initial: '2',
                 md: '3'
-            }} color='gray'>Blueprint works with Small Businesses, U.S. Government Agencies, Universities, Enterprises & Startups</Text>
+            }} weight="medium" color='gray'>Blueprint works with Small Businesses, U.S. Government Agencies, Universities, Enterprises & Startups</Heading>
             <Flex wrap='wrap' align='center' justify={'center'} gap={{
                 initial: '4',
                 md: '6'
