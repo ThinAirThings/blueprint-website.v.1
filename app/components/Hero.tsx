@@ -16,6 +16,7 @@ import wrapcityLogo from '../../public/assets/logos.customers/wrapcity-logo.png'
 import backyardLogo from '../../public/assets/logos.customers/backyard-logo.png'
 import mentisLogo from '../../public/assets/logos.customers/mentis-logo.png'
 import Link from "next/link";
+import { ContactUsButton } from "../ui/ContactUsButton";
 
 export const Hero: FC = () => {
     return (
@@ -38,7 +39,7 @@ export const Hero: FC = () => {
                 }} color='gray' align='center'>Logo Embroidery & Personalized Screen Printing Services for Businesses Small and Large</Text>
             </Flex>
             <Flex gap='5'>
-                <Link href="/contact-us"><Button highContrast><PaperPlaneIcon/>Contact Us</Button></Link>
+                <ContactUsButton label={`Contact Us`} Icon={PaperPlaneIcon}/>
                 <Link href="#services"><Button highContrast variant='outline'><CubeIcon/>Services</Button></Link>
             </Flex>
             <Heading as="h3" align={'center'} size={{

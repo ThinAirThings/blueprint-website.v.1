@@ -1,6 +1,10 @@
-import { Card, Flex, Heading, Inset, Text } from "@radix-ui/themes"
+import { LightningBoltIcon, MobileIcon } from "@radix-ui/react-icons"
+import { Button, Card, Flex, Heading, Inset, Text } from "@radix-ui/themes"
 import Image from "next/image"
+import Link from "next/link"
 import { FC } from "react"
+import { ContactUsButton } from "../ui/ContactUsButton"
+import { CallUsButton } from "../ui/CallUsButton"
 
 
 
@@ -15,24 +19,30 @@ export const Services = () => {
                 initial: '6',
                 md: '8'
             }}>Corporate Branded Apparel & Accessories</Heading>
-            <Flex mt='5' gap='5' wrap={'wrap'} justify={'center'} align={'center'}>
-                <ServiceCard
-                    title='Screen Printed Apparel'
-                    description='Create custom apparel for your brand with numerous options, personalized service.'
-                    imageSrc='/assets/marketing.work/Instagram_NHDOHCO4.png'
-                    imageShift={40}
-                />
-                <ServiceCard
-                    title='Embroidered Apparel'
-                    description='Elevate your brand by customizing accessories, apparel, hats, jackets, and more.'
-                    imageSrc='/assets/marketing.work/brewery-insurance.jpeg'
-                />
-                <ServiceCard
-                    title='Branded Accessories'
-                    description='Add screen printing or embroidery to hats, outwear, workwear, safety gear, and more. '
-                    imageSrc='/assets/marketing.work/PipeDream_Instagram_RastaColors.png'
-                    imageShift={0}
-                />
+            <Flex direction={'column'}>
+                <Flex mt='5' gap='5' wrap={'wrap'} justify={'center'} align={'center'}>
+                    <ServiceCard
+                        title='Screen Printed Apparel'
+                        description='Create custom apparel for your brand with numerous options, personalized service.'
+                        imageSrc='/assets/marketing.work/Instagram_NHDOHCO4.png'
+                        imageShift={40}
+                    />
+                    <ServiceCard
+                        title='Embroidered Apparel'
+                        description='Elevate your brand by customizing accessories, apparel, hats, jackets, and more.'
+                        imageSrc='/assets/marketing.work/brewery-insurance.jpeg'
+                    />
+                    <ServiceCard
+                        title='Branded Accessories'
+                        description='Add screen printing or embroidery to hats, outwear, workwear, safety gear, and more. '
+                        imageSrc='/assets/marketing.work/PipeDream_Instagram_RastaColors.png'
+                        imageShift={0}
+                    />
+                </Flex>
+                <Flex pt='5' align='start' justify={'center'} gap='3'>
+                    <ContactUsButton label={`Get a Quote`} Icon={LightningBoltIcon}/>
+                    <CallUsButton label={'Give us a Call!'} Icon={MobileIcon}/>
+                </Flex>
             </Flex>
         </Flex>
     )
