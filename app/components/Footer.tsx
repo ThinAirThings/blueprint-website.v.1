@@ -11,7 +11,6 @@ export const Footer = () => {
                         <Text size='3' weight='medium'>Services</Text>
                         <Link href='/about'><Text size='2' weight='regular'>About</Text></Link>
                         <Link href='/contact-us'><Text size='2' weight='regular'>Contact Us</Text></Link>
-                        <Link href='#services'><Text size='2' weight='regular'>Services</Text></Link>
                     </Flex>
                 </Flex>
                 <Separator my="3" size="4" />

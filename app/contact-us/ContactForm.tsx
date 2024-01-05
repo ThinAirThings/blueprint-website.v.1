@@ -70,6 +70,27 @@ export const ContactForm = () => {
                                     </Form.Message>
                                 </Flex>
                             </Form.Field>
+                            <Form.Field name="company" asChild>
+                                <Flex direction={'column'} gap={'2'} 
+                                    className="
+                                        w-[370px]
+                                        md:w-[600px]
+                                    "
+                                >
+                                    <Text weight={'medium'}>Company<Text color='red'>*</Text>:</Text>
+                                    <Form.Control asChild>
+                                        <TextField.Input
+                                            required
+                                            type="text"
+                                            placeholder={'Acme Inc.'}
+                                            style={{width: '100%'}}
+                                        />
+                                    </Form.Control>
+                                    <Form.Message match="valueMissing" asChild>
+                                        <Text color="crimson">Please enter a company name.</Text>
+                                    </Form.Message>
+                                </Flex>
+                            </Form.Field>
                             <Form.Field name="phoneNumber" asChild>
                                 <Flex direction={'column'} gap={'2'} 
                                     className="
