@@ -1,4 +1,4 @@
-import { Flex, Heading, Separator } from '@radix-ui/themes'
+import { Flex, Heading, Separator, Strong, Text } from '@radix-ui/themes'
 import { Hero } from './components/Hero'
 import { Details } from './components/Details'
 import { Services } from './components/Services'
@@ -14,7 +14,8 @@ export default function Home() {
             <Separator size='4'/>
             <Flex justify={'center'} px='5'>
                 <Flex direction={'column'} gap='3' width='min-content'>
-                    <Heading>Get a Quote</Heading>
+                        <Heading>Get a Quote</Heading>
+                        <Text weight='medium'>Or contact us by email: <Strong>support@blueprintapparelcompany.com</Strong></Text>
                     <ContactForm/>
                 </Flex>
             </Flex>
