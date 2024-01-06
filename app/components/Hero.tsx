@@ -45,7 +45,7 @@ export const Hero: FC = () => {
             <Heading as="h3" align={'center'} size={{
                 initial: '2',
                 md: '3'
-            }} weight="medium" color='gray'>Blueprint works with Small Businesses, U.S. Government Agencies, Universities, Enterprises & Startups</Heading>
+            }} weight="medium" color='gray'>Blueprint works with Small Businesses, Schools, U.S. Government Agencies, Universities, Enterprises & Startups</Heading>
             <Flex wrap='wrap' align='center' justify={'center'} gap={{
                 initial: '4',
                 md: '6'
