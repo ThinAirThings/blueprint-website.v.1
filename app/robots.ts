@@ -5,7 +5,7 @@ export default function robots(): MetadataRoute.Robots {
         rules: {
             userAgent: '*',
             allow: '/',
-            disallow: '/privacy',
+            // disallow: '/privacy',
         },
         sitemap: 'https://blueprintapparelcompany.com/sitemap.xml',
     }

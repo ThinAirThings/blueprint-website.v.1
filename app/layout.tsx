@@ -11,15 +11,31 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
     metadataBase: new URL('https://blueprintapparelcompany.com'),
-    title: 'Custom Branded Apparel & Accessories | NH, MA, ME',
-    description: 'BluePrint Custom Apparel is your partner for all things custom branded apparel and accessories. Embroidery & screen printing for businesses.',
+    title: 'Custom Sweatshirts, Jackets, Hats & Apparel | NH, MA, ME',
+    description: 'Premium custom sweatshirts, jackets, T-shirts & hats in NH, MA, ME. Exceptional printing quality with personalized service from real experts. Bulk orders.',
+    keywords: [
+        "sweatshirts",
+        "t-shirts",
+        "tee shirts",
+        "screen-printing",
+        "custom apparel", 
+        "custom sweatshirts", 
+        "custom jackets", 
+        "custom hats",
+        "custom t-shirts", 
+        "bulk screen printing",
+        "custom printing", 
+        "custom embroidery", 
+        "custom screen printing", 
+        "screen", 
+    ],
     openGraph: {
         // 60 characters
-        title: 'Custom Branded Apparel & Accessories | NH, MA, ME',
-        siteName: 'BluePrint Custom Apparel',
+        title: 'Custom Sweatshirts, Jackets, Hats & Apparel | NH, MA, ME',
+        siteName: 'BlueprintApparelCompany.com',
         type: "website",
         // 160 characters
-        description: 'BluePrint Custom Apparel is your partner for all things custom branded apparel and accessories. Embroidery & screen printing for businesses.',
+        description: 'Premium custom sweatshirts, jackets, T-shirts & hats in NH, MA, ME. Exceptional printing quality with personalized service from real experts. Bulk orders.',
         url: 'https://blueprintapparelcompany.com',
     }
 }
