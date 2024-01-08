@@ -28,6 +28,7 @@ export const Header: FC = () => {
                             <Image src='/assets/logos.blueprint/BP-logo.svg' alt='logo' width={35} height={40}></Image> 
                         </Link>
                         <Flex>
+
                             <Link href="/about">
                                 <Box 
                                     mr='5'
