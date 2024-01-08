@@ -37,12 +37,12 @@ export default function RootLayout({
                 })(window, document, "clarity", "script", "kiljr85t7i");`}
             </Script>}
             {process.env.NODE_ENV === "production" && <>
-                <Script src="https://www.googletagmanager.com/gtag/js?id=G-JEN35VEDR3"></Script>
+                <Script src="https://www.googletagmanager.com/gtag/js?id=G-5RYMMBVKV4"></Script>
                 <Script>{`
                     window.dataLayer = window.dataLayer || [];
                     function gtag(){dataLayer.push(arguments);}
                     gtag('js', new Date());
-                    gtag('config', 'G-JEN35VEDR3');
+                    gtag('config', 'G-5RYMMBVKV4');
                 `}</Script>
             </>}
             <body className={`${inter.className} antialiased scroll-smooth`}>
