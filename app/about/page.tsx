@@ -13,6 +13,8 @@ export default function () {
             lg: '4'
         }}>
 
+
+
             <div className="flex flex-col justify-center items-center gap-rx-7 pt-9">
                 <Flex direction={'column'} align='center' justify={'center'} gap='3' px='5'>
                     <Heading align='center' size={{
