@@ -30,7 +30,7 @@ export default function (){
                             md: '5'
                         }}
                         align='center'
-                    >Whether you want to create custom embroidered apparel and accessories, design a custom screen printed shirt, or need help selecting the right materials, we can help. If you want to see what you’re design will look like in advance, attach it to the form and we’ll put together a design mockup package for you.</Text>
+                    >Whether you want to create custom embroidered apparel and accessories, design a custom screen printed shirt, or need help selecting the right materials, we can help.</Text>
                 </Flex>
                 <Flex direction={'column'} align='center' justify={'center'} gap='3' pb='9' width='100%'>
                     <ContactForm/>
