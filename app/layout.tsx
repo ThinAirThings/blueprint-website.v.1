@@ -18,6 +18,7 @@ export const metadata: Metadata = {
         "t-shirts",
         "tee shirts",
         "screen-printing",
+        "trade show",
         "custom apparel", 
         "custom sweatshirts", 
         "custom jackets", 
@@ -25,9 +26,8 @@ export const metadata: Metadata = {
         "custom t-shirts", 
         "bulk screen printing",
         "custom printing", 
-        "custom embroidery", 
+        "custom embroidery",
         "custom screen printing", 
-        "screen", 
     ],
     openGraph: {
         // 60 characters

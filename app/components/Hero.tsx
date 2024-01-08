@@ -24,19 +24,27 @@ export const Hero: FC = () => {
             initial: '3',
             md: '7'
         }} px='5' gap='4'>
-            <Heading as='h3' align='center' size={{
-                initial: '8',
-                md: '9'
-            }} >Your Partner in <br/>Business Apparel</Heading>
-
+            <Heading 
+                as='h1' 
+                align='center' 
+                size={{
+                    initial: '8',
+                    md: '9'
+                }}>Custom Sweatshirts, Jackets, T-shirts, Hats & Apparel</Heading>
             <Flex className="
                 w-10/12
                 md:w-8/12
             ">
-                <Text weight="bold" size={{
-                    initial: '4',
-                    md: '5'
-                }} color='gray' align='center'>Logo Embroidery & Personalized Screen Printing Services for Businesses Small and Large</Text>
+                <Heading 
+                    as='h2' 
+                    weight="bold" 
+                    size={{
+                        initial: '4',
+                        md: '5'
+                    }} 
+                    color='gray' 
+                    align='center'
+                >Exceptional printing quality with personalized service from real experts. Bulk orders for trade shows, businesses, and events.</Heading>
             </Flex>
             <Flex gap='5'>
                 <ContactUsButton label={`Contact Us`} Icon={PaperPlaneIcon}/>
