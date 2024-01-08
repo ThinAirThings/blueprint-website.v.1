@@ -44,10 +44,10 @@ export const ContactFormNotify = ({
                     <Container className="border border-solid border-[#eaeaea] rounded my-[40px] mx-auto p-[20px] w-[465px]">
                         <Section className="mt-[32px]">
                             <Img
-                                src={'https://blueprint-logos-b966e60.s3.amazonaws.com/blueprint_long.png'}
+                                src={`https://${process.env.LOGO_BUCKET_URL}/blueprint_long.png`}
                                 width="200"
                                 height="112"
-                                alt="Vercel"
+                                alt="Blueprint"
                                 className="my-0 mx-auto"
                             />
                         </Section>

@@ -48,17 +48,8 @@ export default function RootLayout({
             <body className={`${inter.className} antialiased scroll-smooth`}>
                 <Theme appearance='light' panelBackground='solid' accentColor="blue" radius="small" className="relative">
                     <Header/>
-                    <Container
-                        className="pt-[100px]"
-                        size={{
-                            initial: '1',
-                            sm: '2',
-                            md: '3',
-                            lg: '4'
-                        }}
-                    >
-                        {children}
-                    </Container>
+                    <div className="pt-[100px] w-full"/>
+                    {children}
                     <Footer/>
                 </Theme>
             </body>

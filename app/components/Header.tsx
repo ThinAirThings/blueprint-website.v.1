@@ -27,16 +27,27 @@ export const Header: FC = () => {
                         <Link href='/'>
                             <Image src='/assets/logos.blueprint/BP-logo.svg' alt='logo' width={35} height={40}></Image> 
                         </Link>
-                        <Link href="/about">
-                            <Box 
-                                mr='5'
-                                display={{
-                                    initial: 'none',
-                                    md: 'block'
-                                }}>
-                                <Text weight='bold' size='3'>About Us</Text>
-                            </Box>
-                        </Link>
+                        <Flex>
+                            <Link href="/about">
+                                <Box 
+                                    mr='5'
+                                    display={{
+                                        initial: 'none',
+                                        md: 'block'
+                                    }}>
+                                    <Text weight='bold' size='3'>About Us</Text>
+                                </Box>
+                            </Link>
+                            <Link href="/products">
+                                <Box 
+                                    display={{
+                                        initial: 'none',
+                                        md: 'block'
+                                    }}>
+                                    <Text weight='bold' size='3'>Products</Text>
+                                </Box>
+                            </Link>
+                        </Flex>
                     </Flex>
                     <Flex gap='2' align='end'>
                         <ContactUsButton label={`Contact Us`} Icon={PaperPlaneIcon}/>
