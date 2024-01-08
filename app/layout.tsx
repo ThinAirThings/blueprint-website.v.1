@@ -14,9 +14,11 @@ export const metadata: Metadata = {
     title: 'Custom Branded Apparel & Accessories | NH, MA, ME',
     description: 'BluePrint Custom Apparel is your partner for all things custom branded apparel and accessories. Embroidery & screen printing for businesses.',
     openGraph: {
+        // 60 characters
         title: 'Custom Branded Apparel & Accessories | NH, MA, ME',
         siteName: 'BluePrint Custom Apparel',
         type: "website",
+        // 160 characters
         description: 'BluePrint Custom Apparel is your partner for all things custom branded apparel and accessories. Embroidery & screen printing for businesses.',
         url: 'https://blueprintapparelcompany.com',
     }
