@@ -38,7 +38,7 @@ export const Header: FC = () => {
                                     <Text weight='bold' size='3'>About Us</Text>
                                 </Box>
                             </Link>
-                            <Link href="/products">
+                            {/* <Link href="/products">
                                 <Box 
                                     display={{
                                         initial: 'none',
@@ -46,7 +46,7 @@ export const Header: FC = () => {
                                     }}>
                                     <Text weight='bold' size='3'>Products</Text>
                                 </Box>
-                            </Link>
+                            </Link> */}
                         </Flex>
                     </Flex>
                     <Flex gap='2' align='end'>
