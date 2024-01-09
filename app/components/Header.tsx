@@ -39,15 +39,15 @@ export const Header: FC = () => {
                                     <Text weight='bold' size='3'>About Us</Text>
                                 </Box>
                             </Link>
-                            {/* <Link href="/products">
+                            <Link href="/blog">
                                 <Box 
                                     display={{
                                         initial: 'none',
                                         md: 'block'
                                     }}>
-                                    <Text weight='bold' size='3'>Products</Text>
+                                    <Text weight='bold' size='3'>Blog</Text>
                                 </Box>
-                            </Link> */}
+                            </Link>
                         </Flex>
                     </Flex>
                     <Flex gap='2' align='end'>
