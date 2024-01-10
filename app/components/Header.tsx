@@ -27,27 +27,10 @@ export const Header: FC = () => {
                         <Link href='/'>
                             <Image src='/assets/logos.blueprint/BP-logo.svg' alt='logo' width={35} height={40}></Image> 
                         </Link>
-                        <Flex>
-
-                            <Link href="/about">
-                                <Box 
-                                    mr='5'
-                                    display={{
-                                        initial: 'none',
-                                        md: 'block'
-                                    }}>
-                                    <Text weight='bold' size='3'>About Us</Text>
-                                </Box>
-                            </Link>
-                            <Link href="/blog">
-                                <Box 
-                                    display={{
-                                        initial: 'none',
-                                        md: 'block'
-                                    }}>
-                                    <Text weight='bold' size='3'>Blog</Text>
-                                </Box>
-                            </Link>
+                        <Flex gap='5'>
+                            <TextLink label={`Products`} href={`/products`}/>
+                            <TextLink label={`About`} href={`/about`}/>
+                            <TextLink label={`Blog`} href={`/blog`}/>
                         </Flex>
                     </Flex>
                     <Flex gap='2' align='end'>
@@ -57,5 +40,22 @@ export const Header: FC = () => {
                 </Flex>
             </Container>
         </Flex>
+    )
+}
+
+export const TextLink: FC<{
+    label: string,
+    href: string
+}> = ({label, href}) => {
+    return (
+        <Link href={href}>
+            <Box 
+                display={{
+                    initial: 'none',
+                    md: 'block'
+                }}>
+                <Text weight='bold' size='3'>{label}</Text>
+            </Box>
+        </Link>
     )
 }
