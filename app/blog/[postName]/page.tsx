@@ -2,6 +2,7 @@ import { Container, Flex } from "@radix-ui/themes"
 import { readFile } from "fs/promises"
 import styles from './blogPost.module.scss'
 import Image from "next/image"
+import path from "path"
 
 
 export default async function ({
@@ -11,7 +12,7 @@ export default async function ({
         postName: string
     }
 }) {
-    const htmlContent = await readFile(process.cwd() + `/public/assets/blog.posts/${params.postName}/content.html`, 'utf8')
+    const htmlContent = await readFile(path.resolve(`public/assets/blog.posts/${params.postName}/content.html`), 'utf8')
     return (
         <Container 
             size={{

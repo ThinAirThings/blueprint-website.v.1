@@ -4,12 +4,13 @@ import { FC } from "react";
 import {load} from 'cheerio'
 import {readFile} from "fs/promises";
 import Link from "next/link";
+import path from "path";
 
 
 export const BlogCard: FC<{
     postName: string,
 }> = async ({postName}) => {
-    const $ = load(await readFile(process.cwd() + `/public/assets/blog.posts/${postName}/content.html`, 'utf8'))
+    const $ = load(await readFile(path.resolve(`public/assets/blog.posts/${postName}/content.html`), 'utf8'))
     const category = $('blockquote').first().text()
     const date = $('h3').first().text()
     const title = $('h1').first().text()
