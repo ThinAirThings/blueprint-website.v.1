@@ -24,7 +24,7 @@ export const Footer = () => {
                     <Link href='/contact-us'><Text size='2' weight='regular'>Contact Us</Text></Link>
                 </Flex>
                 <Flex direction={'column'} gap="2" justify={'center'} align='center' className="self-end">
-                    <Image src="assets/logos.blueprint/blueprint-logo-fullText.svg" width={100} height={100} alt="full-logo"/>
+                    <Image src="/assets/logos.blueprint/blueprint-logo-fullText.svg" width={100} height={100} alt="full-logo"/>
                     <Text align='center' size={'1'} color='gray'>Copyright @ 2024 Blueprint Custom Apparel. All rights reserved.</Text>
                 </Flex> 
                 <Flex direction={'column'} gap='3' align={'center'}>

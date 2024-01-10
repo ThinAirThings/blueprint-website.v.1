@@ -1,0 +1,48 @@
+
+.blogPost {
+    font-family: 'Inter', sans-serif;
+    blockquote {
+        font-size: 16px;
+        font-weight: 600;
+        color: var(--blue-10);
+    }
+    h3:first-of-type {
+        font-size: 14px;
+    }
+    h1:first-of-type {
+        font-size: var(--font-size-8);
+        line-height: var(--heading-line-height-8);
+        font-weight: var(--font-weight-bold);
+        letter-spacing: var(--letter-spacing-8);
+        margin-top: var(--space-4);
+    }
+    h2 {
+        font-size: var(--font-size-7);
+        line-height: var(--heading-line-height-7);
+        font-weight: var(--font-weight-bold);
+        letter-spacing: var(--letter-spacing-7);
+        padding-top: var(--space-4);
+    }
+    h3 {
+        font-size: var(--font-size-5);
+        line-height: var(--heading-line-height-5);
+        font-weight: var(--font-weight-bold);
+        letter-spacing: var(--letter-spacing-5);
+    }
+    ol {
+        margin-top: var(--space-2);
+        padding-left: var(--space-4);
+        counter-reset: list-counter;
+        margin-bottom: var(--space-2);
+        li {
+            list-style: none;
+            counter-increment: list-counter;
+            >:first-child::before {
+                content: counter(list-counter) ". "; /* Displays the counter */
+                /* Additional styling for the numbers */
+                font-weight: bold;
+                margin-right: 8px;
+            }
+        }
+    }
+}
