@@ -3,7 +3,23 @@ import { readFile } from "fs/promises"
 import styles from './blogPost.module.scss'
 import Image from "next/image"
 import path from "path"
+import { Metadata } from "next"
 
+
+export async function generateMetadata({
+    params
+}: {
+    params: {
+        postName: string
+    }
+}): Promise<Metadata> {
+    // Get the metadata of the post
+    const metadataJson = JSON.parse(await readFile(path.resolve(`public/assets/blog.posts/${params.postName}/metadata.json`), 'utf8'))
+    return {
+        title: metadataJson.title,
+        description: metadataJson.description,
+    }
+}
 
 export default async function ({
     params
