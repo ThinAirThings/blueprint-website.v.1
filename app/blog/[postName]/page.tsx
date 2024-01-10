@@ -11,7 +11,7 @@ export default async function ({
         postName: string
     }
 }) {
-    const htmlContent = await readFile(process.cwd() + `/app/blog/blog.posts/${params.postName}/content.html`, 'utf8')
+    const htmlContent = await readFile(process.cwd() + `/public/assets/blog.posts/${params.postName}/content.html`, 'utf8')
     return (
         <Container 
             size={{

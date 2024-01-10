@@ -9,7 +9,7 @@ import Link from "next/link";
 export const BlogCard: FC<{
     postName: string,
 }> = async ({postName}) => {
-    const $ = load(await readFile(process.cwd() + `/app/blog/blog.posts/${postName}/content.html`, 'utf8'))
+    const $ = load(await readFile(process.cwd() + `/public/assets/blog.posts/${postName}/content.html`, 'utf8'))
     const category = $('blockquote').first().text()
     const date = $('h3').first().text()
     const title = $('h1').first().text()
