@@ -16,6 +16,7 @@ import gildanLogo from '../../public/assets/logos.brands/gildan-logo.png'
 import ogioLogo from '../../public/assets/logos.brands/ogio-logo.png'
 import Image from "next/image"
 import { CounterClockwiseClockIcon, PersonIcon, TargetIcon } from "@radix-ui/react-icons"
+import { css } from "@/styled-system/css"
 
 export const Details: FC = () => {
     return (
@@ -23,8 +24,7 @@ export const Details: FC = () => {
             initial: '1',
             md: '7'
         }}>
-            {/* <Box><Badge variant='surface' size='2' highContrast>Professional Apparel for Businesses</Badge></Box> */}
-            <Grid className="w-full" justify={'between'} align='center' gap='7' columns={{
+            <Grid className={css({w: 'full'})} justify={'between'} align='center' gap='7' columns={{
                 initial: '1',
                 md: '2'
             }}>

@@ -6,6 +6,7 @@ import { FormButton } from "../ui/FormButton";
 import * as Form from "@radix-ui/react-form";
 import { submitContactForm } from "./submitContactForm";
 import { useFormState } from "react-dom";
+import { css } from "@/styled-system/css";
 
 export const ContactForm = () => {
     const [success, formAction] = useFormState(submitContactForm, false)
@@ -30,10 +31,12 @@ export const ContactForm = () => {
                         <Flex direction={'column'} gap='4'>
                             <Form.Field name="name" asChild>
                                 <Flex direction={'column'} gap={'2'} 
-                                    className="
-                                        w-[370px]
-                                        md:w-[600px]
-                                    "
+                                    className={css({
+                                        w: 370,
+                                        md: {
+                                            w: 600
+                                        }
+                                    })}
                                 >
                                     <Text weight={'medium'}>Name<Text color='red'>*</Text>:</Text>
                                     <Form.Control asChild>
@@ -50,12 +53,7 @@ export const ContactForm = () => {
                                 </Flex>
                             </Form.Field>
                             <Form.Field name="email" asChild>
-                                <Flex direction={'column'} gap={'2'} 
-                                    className="
-                                        w-[370px]
-                                        md:w-[600px]
-                                    "
-                                >
+                                <Flex direction={'column'} gap={'2'} >
                                     <Text weight={'medium'}>Email<Text color='red'>*</Text>:</Text>
                                     <Form.Control asChild>
                                         <TextField.Input
@@ -71,12 +69,7 @@ export const ContactForm = () => {
                                 </Flex>
                             </Form.Field>
                             <Form.Field name="company" asChild>
-                                <Flex direction={'column'} gap={'2'} 
-                                    className="
-                                        w-[370px]
-                                        md:w-[600px]
-                                    "
-                                >
+                                <Flex direction={'column'} gap={'2'}>
                                     <Text weight={'medium'}>Company<Text color='red'>*</Text>:</Text>
                                     <Form.Control asChild>
                                         <TextField.Input
@@ -92,12 +85,7 @@ export const ContactForm = () => {
                                 </Flex>
                             </Form.Field>
                             <Form.Field name="phoneNumber" asChild>
-                                <Flex direction={'column'} gap={'2'} 
-                                    className="
-                                        w-[370px]
-                                        md:w-[600px]
-                                    "
-                                >
+                                <Flex direction={'column'} gap={'2'}>
                                     <Text weight={'medium'}>{`Phone Number:`}</Text>
                                     <Form.Control asChild>
                                         <TextField.Input
@@ -109,12 +97,7 @@ export const ContactForm = () => {
                                 </Flex>
                             </Form.Field>
                             <Form.Field name="quantity" asChild>
-                                <Flex direction={'column'} gap={'2'} 
-                                    className="
-                                        w-[370px]
-                                        md:w-[600px]
-                                    "
-                                >
+                                <Flex direction={'column'} gap={'2'}>
                                     <Text weight={'medium'}>{`Quantity:`}</Text>
                                     <Form.Control asChild>
                                         <TextField.Input
@@ -126,12 +109,7 @@ export const ContactForm = () => {
                                 </Flex>
                             </Form.Field>
                             <Form.Field name="budget" asChild>
-                                <Flex direction={'column'} gap={'2'} 
-                                    className="
-                                        w-[370px]
-                                        md:w-[600px]
-                                    "
-                                >
+                                <Flex direction={'column'} gap={'2'}>
                                     <Text weight={'medium'}>{`Budget:`}</Text>
                                     <Form.Control asChild>
                                         <TextField.Input

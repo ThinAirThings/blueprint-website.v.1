@@ -36,7 +36,6 @@ export default async function ({
         brand_productCode: string
     }
 }) {
-    console.log(params.brand_productCode)
     const [brand, productCode] = params.brand_productCode.split('-') as [string, string]
     const productData = await getCachedProduct(brand, productCode)
     return (

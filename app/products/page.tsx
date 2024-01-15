@@ -3,6 +3,8 @@ import { SmartSearch } from "./components/SmartSearch/SmartSearch";
 import { db } from "../libs/dynamodb";
 import { ColorProps, ProductCard } from "./components/ProductCard/ProductCard";
 import { unstable_cache as cache } from 'next/cache';
+import { css } from "@/styled-system/css";
+import { Grid } from "@/styled-system/jsx";
 
 const getCachedProducts = cache(async () => (await db.scan({
     TableName: process.env.PRODUCTS_TABLE,
@@ -26,16 +28,14 @@ const getCachedProducts = cache(async () => (await db.scan({
 export default async function () {
     const products = await getCachedProducts()
     return (
-        <Flex px='9' className="w-full h-full" direction={'column'}>
+        <Flex px='9' className={css({w: 'full', h: 'full'})} direction={'column'}>
             <Heading>Products</Heading>
-            <Box className="self-center"><SmartSearch/></Box>
-            <div
-                className="grid grid-cols-4 py-9 gap-5"
-            >
+            <Box className={css({alignSelf: 'center'})}><SmartSearch/></Box>
+            <Grid columns={4} gap='5' py='9'>
                 {products.map(product => (
                     <ProductCard key={product.title} {...product}/>
                 ))}
-            </div>
+            </Grid>
         </Flex>
     )
 }

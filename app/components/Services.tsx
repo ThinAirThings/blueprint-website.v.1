@@ -5,12 +5,13 @@ import Link from "next/link"
 import { FC } from "react"
 import { ContactUsButton } from "../ui/ContactUsButton"
 import { CallUsButton } from "../ui/CallUsButton"
+import { css } from "@/styled-system/css"
 
 
 
 export const Services = () => {
     return (
-        <Flex direction={'column'} align='center' id="services" className="pt-[70px]">
+        <Flex direction={'column'} align='center' id="services" className={css({pt: '[50px]'})}>
             <Heading as='h3' size={{
                 initial: '4',
                 md: '7'

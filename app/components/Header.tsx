@@ -5,12 +5,22 @@ import Link from "next/link";
 import { FC } from "react";
 import { CallUsButton } from "../ui/CallUsButton";
 import { ContactUsButton } from "../ui/ContactUsButton";
+import { css } from "@/styled-system/css";
 
 
 
 export const Header: FC = () => {
     return (
-        <Flex position={'fixed'} className="border-b border-slate8 w-full z-[2] bg-white/70 backdrop-blur-sm">
+        <Flex position={'fixed'} 
+            className={css({
+                borderBottom: `1px solid token(colors.slate.8)`,
+                w: 'full',
+                backgroundColor: 'rgba(255,255,255,0.4)',
+                backdropFilter: 'auto',
+                backdropBlur: 'sm',
+                zIndex: 2
+            })}
+        >
             <Container
                 size={{
                     initial: '1',

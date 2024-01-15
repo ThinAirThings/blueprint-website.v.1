@@ -1,6 +1,8 @@
 module.exports = {
     plugins: {
-        tailwindcss: {},
-        autoprefixer: {},
+        'postcss-import': {},
+        '@pandacss/dev/postcss': {},
+        // tailwindcss: {},
+        // autoprefixer: {},
     },
 }

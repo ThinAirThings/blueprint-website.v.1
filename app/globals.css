@@ -1,20 +1,4 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/* NOTE!!!! Radix needs to go where it is to work here.*/
+@layer reset, base, tokens, recipes, radix, utilities;
+@import '@radix-ui/themes/styles.css' layer(radix);
 
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-}
-
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}

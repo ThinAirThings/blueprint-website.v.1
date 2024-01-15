@@ -4,6 +4,9 @@ const nextConfig = {
         remotePatterns: [{
             protocol: 'https',
             hostname: 'cdn.ssactivewear.com'
+        }, {
+            protocol: 'https',
+            hostname: '10.1.10.211'
         }]
     }
 }

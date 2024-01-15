@@ -17,6 +17,7 @@ import backyardLogo from '../../public/assets/logos.customers/backyard-logo.png'
 import mentisLogo from '../../public/assets/logos.customers/mentis-logo.png'
 import Link from "next/link";
 import { ContactUsButton } from "../ui/ContactUsButton";
+import { css } from "@/styled-system/css";
 
 export const Hero: FC = () => {
     return (
@@ -31,10 +32,13 @@ export const Hero: FC = () => {
                     initial: '8',
                     md: '9'
                 }}>Custom Sweatshirts, Jackets, T-shirts, Hats & Apparel</Heading>
-            <Flex className="
-                w-10/12
-                md:w-8/12
-            ">
+            <Flex className={css({
+                    w: '10/12',
+                    md: {
+                        w: '8/12'
+                    }
+                })}
+            >
                 <Heading 
                     as='h2' 
                     weight="bold" 
@@ -57,10 +61,14 @@ export const Hero: FC = () => {
             <Flex wrap='wrap' align='center' justify={'center'} gap={{
                 initial: '4',
                 md: '6'
-            }} className="
-                w-11/12
-                md:w-8/12
-            ">
+            }} 
+            className={css({
+                w: '11/12',
+                md: {
+                    w: '8/12'
+                }
+            })}
+            >
                 <Box><Image src={windfieldLogo} alt="windfield-logo" /></Box>
                 <Box><Image src={bluebirdLogo} alt="bluebird-logo" /></Box>
                 <Box><Image src={spaceforceLogo} alt="spaceforce-logo"/></Box>
