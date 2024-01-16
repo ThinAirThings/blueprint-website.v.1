@@ -6,13 +6,15 @@ import { FormButton } from "../ui/FormButton";
 import * as Form from "@radix-ui/react-form";
 import { submitContactForm } from "./submitContactForm";
 import { useFormState } from "react-dom";
+import { useState } from "react";
 
 export const ContactForm = () => {
     const [success, formAction] = useFormState(submitContactForm, false)
+    const [submitted, setSubmitted] = useState(false)
     return (
         <Flex direction={'column'} gap='3' align='center' justify={'start'} width={'100%'}>
             <Container size='1' width='max-content'>
-                {success ? (
+                {submitted ? (
                     <Flex direction={'column'} gap='3' align='center' justify={'center'} width={'100%'}>
                         <Text
                             color='sky' 
@@ -26,6 +28,7 @@ export const ContactForm = () => {
                 ): (
                     <Form.Root 
                         action={formAction}
+                        onSubmit={() => setSubmitted(true)}
                     >
                         <Flex direction={'column'} gap='4'>
                             <Form.Field name="name" asChild>
