@@ -17,13 +17,13 @@ export const BlogCard: FC<{
 
     return (
         <Link href={`/blog/${postName}`}>
-            <Card style={{maxWidth: '366px'}}>
+            <Card style={{maxWidth: '366px', height: '100%'}}>
                 <Inset 
-                    style={{maxHeight: '215px'}}
+                    style={{maxHeight: '200px', height: '200px'}}
                     clip="padding-box"
                     side="top"
                 >
-                    <Image src={`/assets/blog.images/${postName}.png`} width={368} height={215} alt={postName}/>
+                    <Image src={`/assets/blog.posts/${postName}/image.png`} width={368} height={215} alt={postName}/>
                 </Inset>
                 <Flex direction={'column'} mt='4' gap='3'>
                     <Flex direction={'column'}>

@@ -45,7 +45,7 @@ export default async function ({
                 <Flex direction='column' align={'center'} my='5' style={{borderRadius: '10px', overflow: 'hidden', maxWidth: '784px'}}>
                     <Image 
                         alt={`${params.postName}-image`} 
-                        src={`/assets/blog.images/${params.postName}.png`}
+                        src={`/assets/blog.posts/${params.postName}/image.png`}
                         width={784}
                         height={508}
                         style={{

@@ -1,6 +1,5 @@
 import { Container, Flex, Grid, Heading } from "@radix-ui/themes";
 import { BlogCard } from "./components/BlogCard";
-import path from "path";
 
 
 
@@ -45,9 +44,16 @@ export default function () {
                         color='gray'
                     >Your Ultimate Guide to Custom Clothing Solutions</Heading>
                 </Flex>
-                <Grid>
+                <Grid columns={{
+                    initial: '1',
+                    sm: '2',
+                    md: '3',
+                }} gap='3'>
                     <BlogCard
                         postName={`personalized-apparel-making-a-mark-at-trade-shows`}
+                    />
+                    <BlogCard
+                        postName={`ultimate-employee-gifts-to-boost-loyalty-and-morale`}
                     />
                 </Grid>
             </Flex>
