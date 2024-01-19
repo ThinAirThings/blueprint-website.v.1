@@ -50,11 +50,12 @@ export default function () {
                     md: '3',
                 }} gap='3'>
                     <BlogCard
-                        postName={`personalized-apparel-making-a-mark-at-trade-shows`}
-                    />
-                    <BlogCard
                         postName={`ultimate-employee-gifts-to-boost-loyalty-and-morale`}
                     />
+                    <BlogCard
+                        postName={`personalized-apparel-making-a-mark-at-trade-shows`}
+                    />
+
                 </Grid>
             </Flex>
         </Container>
