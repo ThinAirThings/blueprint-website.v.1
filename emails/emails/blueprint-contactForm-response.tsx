@@ -28,7 +28,7 @@ export const ContactFormResponseEmail = () => {
                     <Container className="border border-solid border-[#eaeaea] rounded my-[40px] mx-auto p-[20px] w-[465px]">
                         <Section className="mt-[32px]">
                             <Img
-                                src={`https://${process.env.LOGO_BUCKET_URL}/blueprint_long.png`}
+                                src={`https://www.blueprintapparelcompany.com/assets/logos.blueprint/blueprint-email.png`}
                                 width="200"
                                 height="112"
                                 alt="Blueprint"
